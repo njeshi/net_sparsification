@@ -117,3 +117,12 @@ SST word clouds visualizing the positive and negative activations for the top fe
 In some language models such as SST and plotted below, sparsity can also increase the performance.
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gxbpd7l34bj30l00gkjs1.jpg" alt="image-20211212151523011" width="350" />
+
+**Reference**
+
+[1]Eric Wong, Shibani Santurkar and Aleksander Madry, . "Leveraging Sparse Linear Layers for Debuggable Deep Networks". CoRR abs/2105.04857. (2021). <br>
+[2]Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman. “Deep inside convolutional networks: Visualising image classification models and saliency maps”. In: arXiv preprint arXiv:1312.6034 (2013).<br>
+[3]Alvin Wan et al. “NBDT: neural-backed decision trees”. In: arXiv preprint arXiv:2004.00221(2020).<br>
+[4]Jerome Friedman, Trevor Hastie, and Rob Tibshirani. “Regularization paths for generalized linear models via coordinate descent”. In: Journal of statistical software (2010).<br>
+[5]Rie Johnson and Tong Zhang. “Accelerating stochastic gradient descent using predictive variance reduction”. In: Advances in neural information processing systems 26 (2013), pp. 315–323.<br>
+[6]Aaron Defazio, Francis Bach, and Simon Lacoste-Julien. “SAGA: A fast incremental gradient method with support for non-strongly convex composite objectives”. In: Advances in neural information processing systems (NeurIPS). 2014<br>
