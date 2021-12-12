@@ -78,7 +78,7 @@ ____
    - `nepochs`: the maximum number of epochs to run the SAGA solver for each step of regularization
    - `alpha`: a hyperparameter for elastic net regularization which controls the tradeoff between L1 and L2 regularization (typically taken to be 0.8 or 0.99). `alpha=1` corresponds to only L1 regularization, whereas `alpha=0` corresponds to only L2 regularization.
    
-   The solver uses a uses a mini-batch derivative of the SAGA algorithm (a class of a variance reduced proximal gradient methods)
+   The solver uses a mini-batch derivative of the SAGA algorithm (a class of a variance reduced proximal gradient methods)
    
    *Stopping criterias*: Two stopping criteria are used one that terminates when the change in the estimated coefficients is small and the other one stops when the training loss has not improved by more than ε_tol for more than T epochs for some T, which is called the lookbehind stopping criteria.
    
