@@ -38,7 +38,8 @@ ____
 
 1. Load the dataset and its train/val/test loaders
 
-2. Define the model
+2. Define the model. 
+
    The architecture of the model can be anything with the requirement that it has to implement a custom forward function that supports the following structure:
 
    ```python
@@ -66,10 +67,12 @@ ____
 
 4. Restore the model and its weights
 
-5. Compute the features
+5. Compute the features. 
+   
    Save the output (latent) from the `forward` function together with its true labels for all the samples in the dataset
 
 6. Calculate the regularization path
+
    A regularization path is a plot of all coefficients values against the values of betas. The path algorithm for the elastic net calculates the regularization path where sparsity ranges the entire spectrum from the trivial zero model (β = 0) to completely dense. The solver of choice is `glm_saga` ([link](https://github.com/MadryLab/glm_saga)) which requires the following arguments:
 
    - `linear`: a PyTorch `nn.Linear` module which the solver initializes from (initialize this to zero)
@@ -83,9 +86,10 @@ ____
    *Stopping criterias*: Two stopping criteria are used one that terminates when the change in the estimated coefficients is small and the other one stops when the training loss has not improved by more than ε_tol for more than T epochs for some T, which is called the lookbehind stopping criteria.
    
 6. Select a single sparse model. 
+
    The elastic net yields a sequence of linear models—with varying accuracy and sparsity (the regularization path). For both vision and NLP tasks, a validation set is used to identify the sparsest decision layer, whose accuracy is no more than 5% lower on the validation set, compared to the best performing decision layer. 
 
-6. Visualizations
+6. Visualizations.
    
    Traditionally, LIME is used to obtain instance-specific explanations—i.e., to identify the superpixels in a given test image that are most responsible for the model’s prediction. However in the current setting a global understanding of deep features, independent of specific test examples is needed. To accomplish that, 
    	(1) Test images are ranked based on how strongly they activate the feature of interest and then the top-k are 	selected as the most prototypical examples for positive/negative)activation of the feature
