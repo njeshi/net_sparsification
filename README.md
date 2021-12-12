@@ -118,7 +118,9 @@ In some language models such as SST and plotted below, sparsity can also increas
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gxbpd7l34bj30l00gkjs1.jpg" alt="image-20211212151523011" width="350" />
 
-**Reference**
+____
+
+#### Reference
 
 [1]Eric Wong, Shibani Santurkar and Aleksander Madry, . "Leveraging Sparse Linear Layers for Debuggable Deep Networks". CoRR abs/2105.04857. (2021). <br>
 [2]Karen Simonyan, Andrea Vedaldi, and Andrew Zisserman. “Deep inside convolutional networks: Visualising image classification models and saliency maps”. In: arXiv preprint arXiv:1312.6034 (2013).<br>
