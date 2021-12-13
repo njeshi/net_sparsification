@@ -50,15 +50,16 @@ ____
        x: tensor
          The input tensor
        with_latent: bool
-         If this option is given, forward should return the output of the second-last layer along
-         with the logits
+         If this option is given, forward should return the 
+         output of the second-last layer along with the logits
        fake_relu: bool
-         If this option is given, replace the ReLU just after the second-last layer with a
-         custom_modules.FakeReLUM, which is a ReLU on the forwards pass and identity on the
+         If this option is given, replace the ReLU just after 
+         the second-last layer with a custom_modules.FakeReLUM, 
+         which is a ReLU on the forwards pass and identity on the
          backwards pass
        no_relu: bool
-         If this option is given, then with_latent should return the pre-ReLU activations of the
-         second-last layer
+         If this option is given, then with_latent should return 
+         the pre-ReLU activations of the second-last layer
        """
        pass
    ```
