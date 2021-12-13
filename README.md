@@ -122,6 +122,13 @@ In some language models such as SST and plotted below, sparsity can also increas
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gxbpd7l34bj30l00gkjs1.jpg" alt="image-20211212151523011" width="350" />
 
+
+
+Top-K sparse features are better at representing the network (k=5)
+
+<img src="https://i.ibb.co/HqHd3FS/download.png" alt="image-20211212151523011" width="350" />
+
+
 ____
 
 #### Reference
