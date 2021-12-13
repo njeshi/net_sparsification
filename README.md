@@ -28,9 +28,9 @@ ____
 
 **Repo structure**
 
-`language` - all language related experiments and helper functions 
+`language` - all language related experiments and helper functions; check the notebook for example usage
 
-`vision` - all vision related experiments, helper functions and visualization tools
+`vision` - all vision related experiments, helper functions and visualization tools; check the notebook for example usage
 
 
 
